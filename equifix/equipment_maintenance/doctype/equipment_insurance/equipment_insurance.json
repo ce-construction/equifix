@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-05 16:09:55.534171",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "insurance_type",
+  "vendor_name",
+  "amount_insured",
+  "expiry_date",
+  "status",
+  "days_left",
+  "insured_date",
+  "document"
+ ],
+ "fields": [
+  {
+   "fieldname": "insurance_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insurance Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vendor Name"
+  },
+  {
+   "fieldname": "amount_insured",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount Insured"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nActive\nExpired",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "days_left",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Days Left",
+   "read_only": 1
+  },
+  {
+   "fieldname": "insured_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Insured Date"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-06 14:57:03.114770",
+ "modified_by": "Administrator",
+ "module": "Equipment Maintenance",
+ "name": "Equipment Insurance",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-05 13:48:04.222742",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "from",
+  "to",
+  "sent_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "To",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sent_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Sent Date",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-05 13:48:04.222742",
+ "modified_by": "Administrator",
+ "module": "Equipment Maintenance",
+ "name": "To And From Location",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

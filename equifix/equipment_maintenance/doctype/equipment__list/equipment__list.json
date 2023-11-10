@@ -1,0 +1,342 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-05 11:46:45.364695",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information_tab",
+  "naming_series",
+  "equipment_category",
+  "equipment_name",
+  "column_break_rsqq",
+  "erp_coding",
+  "column_break_ulgi",
+  "ce_coding",
+  "location_transfer_section",
+  "site_date_table",
+  "section_break_tsnu",
+  "purchase_location",
+  "column_break_cgbl",
+  "current_location",
+  "equipment_basic_details_section",
+  "division",
+  "model",
+  "brand_name",
+  "chessis_no",
+  "column_break_yopn",
+  "custom_registration_numbermachine_eserial_no",
+  "engine_no",
+  "no_of_cylinder",
+  "capacity",
+  "column_break_hjwb",
+  "vendor_name",
+  "purchased_date",
+  "lcttdo",
+  "date_of_manufacture",
+  "remarks_section",
+  "note",
+  "equipment_insurance_tab",
+  "insurance_table_column",
+  "table_yezm",
+  "billingdepreciation_tab",
+  "billing_information_section",
+  "bill_number",
+  "column_break_dgbl",
+  "rate",
+  "column_break_ynyo",
+  "discount",
+  "column_break_fnnw",
+  "total",
+  "column_break_kvyi",
+  "vat",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "EQUIP-."
+  },
+  {
+   "fieldname": "equipment_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Equipment Category",
+   "options": "Equipment Category"
+  },
+  {
+   "fieldname": "column_break_rsqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_coding",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "ERP Coding",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_ulgi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ce_coding",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "CE Coding",
+   "unique": 1
+  },
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location_transfer_section",
+   "fieldtype": "Section Break",
+   "label": "Location Transfer"
+  },
+  {
+   "fieldname": "site_date_table",
+   "fieldtype": "Table",
+   "label": "Site Date Table",
+   "options": "To And From Location"
+  },
+  {
+   "fieldname": "section_break_tsnu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "purchase_location",
+   "fieldtype": "Link",
+   "label": "Purchase Location",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cgbl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "current_location",
+   "fieldtype": "Link",
+   "label": "Current Location",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "equipment_basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Equipment Basic Details"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "label": "Brand Name"
+  },
+  {
+   "fieldname": "column_break_yopn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_registration_numbermachine_eserial_no",
+   "fieldtype": "Data",
+   "label": "Registration Number/Machine E-Serial No."
+  },
+  {
+   "fieldname": "engine_no",
+   "fieldtype": "Data",
+   "label": "Engine No."
+  },
+  {
+   "fieldname": "no_of_cylinder",
+   "fieldtype": "Int",
+   "label": "No. Of Cylinder"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "column_break_hjwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name"
+  },
+  {
+   "fieldname": "purchased_date",
+   "fieldtype": "Date",
+   "label": "Purchased Date"
+  },
+  {
+   "fieldname": "lcttdo",
+   "fieldtype": "Data",
+   "label": "LC/TT/DO"
+  },
+  {
+   "fieldname": "date_of_manufacture",
+   "fieldtype": "Date",
+   "label": "Date Of Manufacture"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "Note"
+  },
+  {
+   "fieldname": "general_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "equipment_insurance_tab",
+   "fieldtype": "Tab Break",
+   "label": "Equipment Insurance"
+  },
+  {
+   "fieldname": "insurance_table_column",
+   "fieldtype": "Column Break",
+   "label": "Insurance Table"
+  },
+  {
+   "fieldname": "table_yezm",
+   "fieldtype": "Table",
+   "options": "Equipment Insurance"
+  },
+  {
+   "fieldname": "billingdepreciation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Billing/Depreciation"
+  },
+  {
+   "fieldname": "billing_information_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Information"
+  },
+  {
+   "fieldname": "bill_number",
+   "fieldtype": "Data",
+   "label": "Bill Number"
+  },
+  {
+   "fieldname": "column_break_dgbl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "column_break_ynyo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fnnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Float",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "column_break_kvyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total"
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Float",
+   "label": "VAT"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "chessis_no",
+   "fieldtype": "Data",
+   "label": "Chessis No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-06 16:08:02.557554",
+ "modified_by": "Administrator",
+ "module": "Equipment Maintenance",
+ "name": "Equipment  List",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Equipment Maintenance",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "erp_coding,ce_coding",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-06 16:18:57.802998",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "equipment_id",
+  "column_break_ejuf",
+  "equipment_name",
+  "column_break_qsis",
+  "status",
+  "section_break_vxgw",
+  "history_table_column",
+  "table_hnlr",
+  "data_prop",
+  "maintenance_record_section",
+  "customer_name",
+  "site",
+  "location",
+  "column_break_haum",
+  "machine_status",
+  "kmhour_reading",
+  "svr_no",
+  "column_break_ogfx",
+  "first_time_fix",
+  "service_name",
+  "section_break_pzrf",
+  "driver_details_column",
+  "operatordriver_name",
+  "operatordriver_phone_no",
+  "service_information_column",
+  "date_of_service_request",
+  "service_completion_date",
+  "service_nature_column",
+  "nature_of_complaint",
+  "nature_of_request"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "EM-."
+  },
+  {
+   "fieldname": "equipment_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Equipment ID",
+   "options": "Equipment  List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ejuf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qsis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nOpen\nCompleted\nAssign\nOn Hold\nNot Completed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vxgw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Please maintain the equipment maintenance status",
+   "fieldname": "table_hnlr",
+   "fieldtype": "Table",
+   "options": "Equipment History",
+   "reqd": 1
+  },
+  {
+   "fieldname": "history_table_column",
+   "fieldtype": "Column Break",
+   "label": "History Table"
+  },
+  {
+   "fieldname": "maintenance_record_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance Record"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_haum",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "machine_status",
+   "fieldtype": "Select",
+   "label": "Machine Status",
+   "options": "Warranty\nExtended Warranty\nBeyond Warranty\nCare Plus\nAMC"
+  },
+  {
+   "fieldname": "column_break_ogfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "No",
+   "fieldname": "first_time_fix",
+   "fieldtype": "Select",
+   "label": "First Time Fix",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "data_prop",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "kmhour_reading",
+   "fieldtype": "Data",
+   "label": "KM/Hour Reading"
+  },
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Link",
+   "label": "Service Name",
+   "options": "Service Type"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "svr_no",
+   "fieldtype": "Int",
+   "label": "SVR No."
+  },
+  {
+   "fieldname": "section_break_pzrf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "driver_details_column",
+   "fieldtype": "Column Break",
+   "label": "Driver Details"
+  },
+  {
+   "fieldname": "operatordriver_name",
+   "fieldtype": "Data",
+   "label": "Operator/Driver Name"
+  },
+  {
+   "fieldname": "operatordriver_phone_no",
+   "fieldtype": "Phone",
+   "label": "Operator/Driver Phone No."
+  },
+  {
+   "fieldname": "service_information_column",
+   "fieldtype": "Column Break",
+   "label": "Service Information"
+  },
+  {
+   "fieldname": "date_of_service_request",
+   "fieldtype": "Datetime",
+   "label": "Date of Service Request"
+  },
+  {
+   "fieldname": "service_nature_column",
+   "fieldtype": "Column Break",
+   "label": "Service Nature"
+  },
+  {
+   "fieldname": "nature_of_complaint",
+   "fieldtype": "Long Text",
+   "label": "Nature Of Complaint",
+   "max_height": "35px"
+  },
+  {
+   "fieldname": "nature_of_request",
+   "fieldtype": "Select",
+   "label": "Nature Of Request",
+   "options": "\nBreakdown\nMachine Operation"
+  },
+  {
+   "fieldname": "service_completion_date",
+   "fieldtype": "Datetime",
+   "label": "Service Completion Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-07 14:23:46.703654",
+ "modified_by": "Administrator",
+ "module": "Equipment Maintenance",
+ "name": "Equipment  Maintenance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Equipment Maintenance",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

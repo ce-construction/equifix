@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "creation": "2023-11-02 11:40:35.272225",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_category_name",
+  "column_break_unwy",
+  "category_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_category_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment Category Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_unwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category Type",
+   "options": "Asset\nVehicle",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-02 15:10:39.221895",
+ "modified_by": "Administrator",
+ "module": "Equipment Maintenance",
+ "name": "Equipment Category",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Equipment Maintenance",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "equipment_category_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
